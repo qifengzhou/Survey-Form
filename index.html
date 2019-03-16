@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC: Survey Form</title>
+  
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id="title">Survey Form</h1>
+<p id="description">Which coding frames do you use in the software development?</p>
+
+<form id="survey-form">
+  <div class="right-tab">
+  <label for="name" id="name-label">Name:</label>
+  <input type="text" id="name" required placeholder="Joe Don">
+  </div>
+  <br>
+  <div class="right-tab">
+  <label for="email" id="email-label">Email:</label>
+  <input type="email" id="email" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="joedon@gamil.com">
+  </div>
+  <br>
+  <div class="right-tab">
+  <label for="number" id="number-label">Years as developer:</label>
+  <input type="number" id="number" min="0" max="150" placeholder="1">
+  </div>
+  <br>
+  
+ <div class="right-tab" id="dropdown-box">
+  <label for="dropdown" id="dropdown-disc">How to best describe your level as a programmer?</label>
+  <select id="dropdown">
+  <option>--please select--</option> 
+  <option value="Software Engineer II">Software Engineer II</option>
+  <option value="Software Engineer III">Software Engineer III</option>
+  <option value="Software Engineer">Software Engineer</option>
+  <option value="Senior Engineer">Senior Engineer</option>
+  <option value="Staff Engineer">Staff Engineer</option>
+  <option value="Senior Staff Engineer">Senior Staff Engineer</option>
+  <option value="Princinple Engineer">Princinple Engineer</option>
+  <option value="Distinguished Engineer">Distinguished Engineer</option>
+  <option value="Fellow">Fellow</option>
+  </select>
+  </div>
+  
+  <br><br>
+  <fieldset class="boxes">
+    <legend>Did you contribute to open source projects?</legend>
+    <div>
+      <input type="radio" id="yes" name="ops" value="yes" checked/>
+      <label for="yes">yes</label>
+    </>
+    <div>
+      <input type="radio" id="no" name="ops" value="no"/>
+      <label for="no">no</label>
+    </div>
+  </fieldset>
+  
+  <fieldset class="boxes">
+    <legend>Choose the languages you are familiar with: (check all applys)</legend>
+      <div>
+       <input type="checkbox" id="CPP" value="CPP" name="language[]" checked/>
+        <label for="CPP">CPP</label>
+     </div>
+    <div>
+       <input type="checkbox" id="Python" value="Python" name="language[]"/>
+        <label for="Python">Python</label>
+      </div>
+      <div>
+       <input type="checkbox" id="JAVA" value="JAVA" name="language[]"/>
+        <label for="JAVA">JAVA</label>
+      </div>
+    <div>
+       <input type="checkbox" id="SQL" value="SQL" name="language[]"/>
+      <label for="SQL">SQL</label>
+      </div>
+      
+      <div>
+       <input type="checkbox" id="HTML" value="HTML" name="language[]"/>
+        <label for="HTML">HTML</label>
+      </div>
+      <div>
+       <input type="checkbox" id="CSS" value="CSS" name="language[]"/>
+        <label for="CSS">CSS</label>
+      </div>
+      <div>
+       <input type="checkbox" id="Javascript" value="Javascript" name="language[]"/>
+        <label for="Javascript">Javascript</label>
+      </div>
+      <div>
+       <input type="checkbox" id="R" value="R" name="language[]"/>
+        <label for="R">R</label>
+      </div>
+  </fieldset>
+  <fieldset class="boxes">
+    <legend>Which frames do you familiar with?    (check all applys)</legend>
+    <div>
+      <input type="checkbox" id="Angular" value="Angular" name="frames[]" checked/>
+      <label for="Angular">Angular</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Node.js" value="Node.js" name="frames[]"/>
+      <label for="Node.js">Node.js</label>
+    </div>
+    <div>
+      <input type="checkbox" id="React" value="React" name="frames[]"/>
+      <label for="React">React</label>
+    </div>
+  </fieldset>
+  
+      <div id="add-info">
+        <label for="extra-info">Additional information:</label><br/>
+        <textarea id="extra-info" name="extra-info">
+        </textarea>
+      </div>
+  
+    <input type="submit" id="submit" value="Submit">
+</form>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

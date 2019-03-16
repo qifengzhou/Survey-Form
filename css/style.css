@@ -1,0 +1,56 @@
+#title{
+  text-align: center;
+}
+#description{
+  text-align: center;
+}
+.right-tab{
+  text-align: center;
+}
+#email{
+  display: inline-block;
+}
+#number{
+  margin-left: 17.5%;
+  margin-right: 13.7%;
+  width: 10%;
+}
+#number-label{
+  position: absolute;
+  right: 685px;
+}
+
+.boxes{
+  position: relative;
+  width: 20%;
+  left: 500px;
+}
+
+#add-info{
+  position: relative;
+  width: 20%;
+  left: 500px;
+}
+#extra-info{
+  width: 278px;
+  height: 100px;
+}
+#submit{
+  position: relative;
+  width: 10%;
+  left: 500px;
+  font-size: 100px;
+}
+#dropdown-box{
+  display: inline;
+  text-align: left;
+  width: 50%;
+  margin-left: 250px;
+}
+#dropdown{
+  width: 12%;
+}
+fieldset{
+  border: 1px solid;
+  border-color: grey;
+}
